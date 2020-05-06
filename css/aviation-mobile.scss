@@ -1,0 +1,85 @@
+// Global color scheme
+$primary-blue: #0a4595;
+$dark-gray: #333;
+$secondary-blue: #0099d8;
+$light-gray: #eee;
+$green: rgba(97, 175, 95, 0.4);
+$yellow: rgb(255, 240, 80);
+$red: #f25c05;
+
+@mixin matrix-line {
+	display: flex;
+	align-items: center;
+	height: 40px;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: "Quicksand", sans-serif;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+nav {
+	display: flex;
+	background: $primary-blue;
+	color: #fff;
+	height: 50px;
+	line-height: 50px;
+	justify-content: space-between;
+	padding: 0 15px;
+	#title-logo {
+		display: flex;
+		align-items: center;
+		margin: 0;
+		h3 {
+			margin: 0 2px;
+			font-weight: 400;
+			font-size: 1.5rem;
+		}
+	}
+	#nav-links {
+		ul {
+			display: flex;
+			padding: 0;
+			li {
+				list-style-type: none;
+				padding: 0 10px;
+				transition: all 0.5s;
+				&:hover {
+					background-color: darken($primary-blue, 10%);
+					cursor: pointer;
+				}
+			}
+		}
+	}
+}
+
+.criteria-pro-tip {
+	font-size: 0.9rem;
+	text-align: center;
+	border-bottom: 2px solid $dark-gray;
+	i {
+		margin-left: 3px;
+	}
+}
+
+.date-header {
+	font-size: 1.2rem;
+	border-bottom: 2px solid $dark-gray;
+	@include matrix-line();
+	justify-content: center;
+}
+
+.matrix-line {
+	@include matrix-line();
+	justify-content: space-between;
+	border-bottom: 1px solid #fff;
+	padding: 0 30px;
+	background-color: $green;
+}

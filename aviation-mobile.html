@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- Local stylesheet -->
+		<link rel="stylesheet" href="./css/aviation-mobile.css" />
+		<!-- Google Font -->
+		<link
+			href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap"
+			rel="stylesheet"
+		/>
+		<!-- Font Awesome CDN -->
+		<script src="https://kit.fontawesome.com/3fb8c73f01.js" crossorigin="anonymous"></script>
+		<!-- Axios CDN -->
+		<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+		<title></title>
+	</head>
+	<body>
+		<!-- Navbar -->
+		<nav>
+			<div id="title-logo">
+				<!-- Nav Title -->
+				<h3><a href="https://www.weather.gov/twc">Aviation</a></h3>
+			</div>
+			<!-- Nav Links -->
+			<div id="nav-links">
+				<ul>
+					<!-- ...may need href to be updated -->
+					<a href=""><li>Matrix</li></a>
+					<a href=""><li>Climatology</li></a>
+				</ul>
+			</div>
+		</nav>
+		<!-- Notification below nav -->
+		<div class="criteria-pro-tip">
+			<p>***EXPERIMENTAL***</p>
+			<p>Click and hold on forecast field for criteria<i class="fas fa-arrow-circle-down"></i></p>
+		</div>
+		<!-- Matrix -->
+		<div id="matrix"></div>
+		<script src="./js/aviationMatrixMobile.js"></script>
+	</body>
+</html>

@@ -1,0 +1,108 @@
+{
+	"header": [
+		{ "color": "green", "text": "No Sig<br>Wx." },
+		{ "color": "yellow", "text": "Mod Wx.<br>Impact" },
+		{ "color": "red", "text": "Maj Wx.<br>Impact" }
+	],
+	"body": [
+		{
+			"variable": "maxT",
+			"isInverse": false,
+			"green": 95,
+			"yellow": 102,
+			"textArray": ["Below 96°", "96° to 102°", "Above 102°"],
+			"colorsClass": ["green", "yellow", "red"]
+		},
+		{
+			"variable": "densityAlt",
+			"isInverse": false,
+			"green": 5499,
+			"yellow": 8000,
+			"textArray": ["Below 5500'", "5500' to 8000'", "Above 8000'"],
+			"colorsClass": ["green", "yellow", "red"]
+		},
+		{
+			"variable": "maxSfcWind",
+			"isInverse": false,
+			"green": 14,
+			"yellow": 25,
+			"textArray": ["Below 15kts", "15 to 25kts", "Above 25kts"],
+			"colorsClass": ["green", "yellow", "red"]
+		},
+		{
+			"variable": "maxGustSpread",
+			"isInverse": false,
+			"green": 9,
+			"yellow": 15,
+			"textArray": ["Below 10kts", "10 to 15kts", "Above 15kts"],
+			"colorsClass": ["green", "yellow", "red"]
+		},
+		{
+			"variable": "TSRA",
+			"isInverse": false,
+			"green": 9,
+			"yellow": 30,
+			"textArray": ["No storms", "10 to 30%", "Above 30%"],
+			"textShort": ["None", "10-30", "> 30"],
+			"colorsClass": ["green", "yellow", "red"]
+		},
+		{
+			"variable": "maxRH",
+			"isInverse": false,
+			"green": 64,
+			"yellow": 75,
+			"textArray": ["Below 65%", "65 to 75%", "Above 75%"],
+			"colorsClass": ["green", "yellow", "red"]
+		},
+		{
+			"variable": "visibility",
+			"isInverse": true,
+			"green": 3.1,
+			"yellow": 2,
+			"textArray": ["Above 3 mi", "2-3 mi", "Below 2 mi"],
+			"textShort": ["> 3", "2-3", "< 2"],
+			"colorsClass": ["green", "yellow", "red"]
+		},
+		{
+			"variable": "wind5k",
+			"isInverse": false,
+			"green": 19,
+			"yellow": 30,
+			"textArray": ["Below 20kts", "20 to 30kts", "Above 30kts"],
+			"textShort": ["< 20", "20-30", "> 30"],
+			"colorsClass": ["green", "yellow", "red"]
+		},
+		{
+			"variable": "wind10k",
+			"isInverse": false,
+			"green": 19,
+			"yellow": 30,
+			"textArray": ["Below 20kts", "20 to 30kts", "Above 30kts"],
+			"textShort": ["< 20", "20-30", "> 30"],
+			"colorsClass": ["green", "yellow", "red"]
+		},
+		{
+			"variable": "totalCloud",
+			"isInverse": false,
+			"green": 49,
+			"yellow": 80,
+			"textArray": ["Below 50%", "50 to 80%", "Above 80%"],
+			"textShort": ["< 50", "50-80", "> 80"],
+			"colorsClass": ["green", "yellow", "red"]
+		},
+		{
+			"variable": "lowestFltCat",
+			"isInverse": false,
+			"textArray": ["VFR", "MVFR", "IFR"],
+			"textShort": ["VFR", "MVFR", "IFR"],
+			"colorsClass": ["green", "yellow", "red"]
+		},
+		{
+			"variable": "mtnObs",
+			"isInverse": false,
+			"textArray": ["None", "Possible", "Likely"],
+			"textShort": ["None", "Psbl", "Likely"],
+			"colorsClass": ["green", "yellow", "red"]
+		}
+	]
+}
