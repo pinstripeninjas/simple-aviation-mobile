@@ -1,6 +1,6 @@
 // API url locations
-const urlForecast = "./json/forecast.json";
-const urlCriteria = "./json/criteria.json";
+const urlForecast = "./static/json/forecast.json";
+const urlCriteria = "./static/json/criteria.json";
 
 const matrix = document.querySelector("#matrix");
 
