@@ -6,6 +6,7 @@ const matrix = document.querySelector("#matrix");
 const criteriaPopup = document.querySelector("#criteria-popup");
 const criteriaPopupName = document.querySelector(".criteria-name");
 const criteriaPopupTable = document.querySelector(".criteria-table");
+const loader = document.querySelector(".loader");
 
 // variable to handle setTimeout/clearTimeout
 let timeout;
@@ -24,6 +25,7 @@ const getDataForMatrix = () => {
 		])
 		.then(
 			axios.spread(({ data: forecast }, { data: criteria }) => {
+				loader.classList.toggle("display-none");
 				buildMatrix(forecast, criteria);
 			})
 		);
@@ -114,9 +116,9 @@ const populatePopup = (event, criteria, field) => {
 // displays/hides popup
 const showPopup = (value) => {
 	if (value) {
-		criteriaPopup.classList.remove("hidden");
+		criteriaPopup.classList.remove("display-none");
 	} else {
-		criteriaPopup.classList.add("hidden");
+		criteriaPopup.classList.add("display-none");
 	}
 };
 

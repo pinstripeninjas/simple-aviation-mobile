@@ -11,6 +11,19 @@ a {
   color: inherit;
 }
 
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+section {
+  margin-top: 68px;
+  height: calc(100vh - 68px);
+}
+
 nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -39,6 +52,10 @@ nav #title-logo h3 {
   margin: 0 2px;
   font-weight: 400;
   font-size: 1.5rem;
+}
+
+nav #title-logo i {
+  margin-right: 3px;
 }
 
 nav #nav-links ul {
@@ -158,7 +175,57 @@ nav #nav-links ul li:hover {
           flex-grow: 1;
 }
 
-.hidden {
+.display-none {
   display: none;
+}
+
+.loader {
+  text-align: center;
+  color: #0a4595;
+  font-size: 2rem;
+}
+
+.loader i {
+  margin-right: 8px;
+}
+
+.rotate {
+  -webkit-animation: rotate 2s linear infinite both;
+          animation: rotate 2s linear infinite both;
+}
+
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+.chart {
+  width: 100%;
+  height: 65%;
+  padding: 20px;
+  background-color: #fff;
+}
+
+@media (min-width: 600px) {
+  .chart {
+    height: 100%;
+  }
 }
 /*# sourceMappingURL=aviation-mobile.css.map */

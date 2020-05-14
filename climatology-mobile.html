@@ -14,6 +14,8 @@
 		<script src="https://kit.fontawesome.com/3fb8c73f01.js" crossorigin="anonymous"></script>
 		<!-- Axios CDN -->
 		<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+		<!-- Chart JS -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
 		<title></title>
 	</head>
 	<body>
@@ -22,30 +24,33 @@
 			<nav>
 				<div id="title-logo">
 					<!-- Nav Title -->
-					<h3><a href="https://www.weather.gov/twc">Aviation</a></h3>
+					<h3><i class="fas fa-plane"></i>Aviation</h3>
 				</div>
 				<!-- Nav Links -->
 				<div id="nav-links">
 					<ul>
 						<!-- ...may need href to be updated -->
-						<a href="/nws-projects/simple-aviation-mobile/aviation-mobile.html"><li>Matrix</li></a>
-						<a href="/climatology-mobile.html"><li>Climatology</li></a>
+						<a href="/nws-projects/simple-aviation-mobile/aviation-mobile.html">
+							<li>Matrix</li>
+						</a>
+						<a href="/nws-projects/simple-aviation-mobile/climatology-mobile.html">
+							<li>Climatology</li>
+						</a>
 					</ul>
 				</div>
 			</nav>
 			<!-- Notification below nav -->
 			<div class="criteria-pro-tip">
 				<p>***EXPERIMENTAL***</p>
-				<p>Tap and hold on forecast field for criteria<i class="fas fa-arrow-circle-down"></i></p>
 			</div>
 		</div>
-		<!-- Matrix -->
-		<div id="matrix"></div>
-		<!-- Criteria Modal -->
-		<div id="criteria-popup" class="hidden">
-			<div class="criteria-name"></div>
-			<div class="criteria-table"></div>
-		</div>
-		<script src="./static/js/aviationMatrixMobile.js"></script>
+		<!-- Climatology Chart -->
+		<section>
+			<div class="loader center"><i class="fas fa-sun rotate"></i>Loading...</div>
+			<div class="chart display-none">
+				<canvas id="climatologyChart" width="100%"></canvas>
+			</div>
+		</section>
+		<script src="./static/js/aviationClimatologyMobile.js"></script>
 	</body>
 </html>
