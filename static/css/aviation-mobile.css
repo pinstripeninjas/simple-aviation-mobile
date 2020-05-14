@@ -60,7 +60,14 @@ nav #nav-links ul li:hover {
   cursor: pointer;
 }
 
+.sticky-header {
+  position: fixed;
+  top: 0%;
+  width: 100%;
+}
+
 .criteria-pro-tip {
+  background-color: #fff;
   font-size: 0.9rem;
   text-align: center;
   border-bottom: 2px solid #333;
@@ -98,6 +105,60 @@ nav #nav-links ul li:hover {
           justify-content: space-between;
   border-bottom: 1px solid #fff;
   padding: 0 30px;
+}
+
+#matrix {
+  margin-top: 88px;
+}
+
+.green {
   background-color: rgba(97, 175, 95, 0.4);
+}
+
+.yellow {
+  background-color: #fff050;
+}
+
+.red {
+  background-color: #f25c05;
+  color: #fff;
+}
+
+#criteria-popup {
+  position: fixed;
+  top: 12px;
+  left: 50%;
+  margin-left: -42.5%;
+  -webkit-box-shadow: 0px 7px 20px 7px rgba(51, 51, 51, 0.5);
+          box-shadow: 0px 7px 20px 7px rgba(51, 51, 51, 0.5);
+  width: 85%;
+  border: solid 1px #fff;
+  text-align: center;
+}
+
+.criteria-name {
+  background-color: #0a4595;
+  color: #fff;
+  border-bottom: solid 1px #fff;
+  padding: 5px;
+}
+
+.criteria-table {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  background-color: #fff;
+}
+
+.criteria-table div {
+  padding: 5px 0;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.hidden {
+  display: none;
 }
 /*# sourceMappingURL=aviation-mobile.css.map */
