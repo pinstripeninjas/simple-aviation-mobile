@@ -99,7 +99,7 @@ const applyColorClass = (value, criteria) => {
 // creates the criteria popup information
 const populatePopup = (event, criteria, field) => {
 	// get position of click
-	const position = event.touches[0].clientY - 95;
+	const position = event.touches[0].clientY - 100;
 	// build criteria popup
 	criteriaPopupName.innerText = field;
 	criteriaPopupTable.innerHTML = "";
